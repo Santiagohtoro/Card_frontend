@@ -1,0 +1,142 @@
+@import "variables.scss";
+
+
+body{
+    background-color: $mainColor ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-container{
+    width: 400px;
+    height: 680px;
+    background-color: $cardColor;
+    margin-top: 6%;
+    border-radius: 15px;
+    box-shadow: 15px 20px 20px 20px $shadow;
+    .flex-image{
+        width: 350px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-image: url(../images/image-equilibrium.jpg);
+        background-size: 350px 350px;
+        margin: 25px 25px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.visual{
+    z-index: -1;
+}
+
+//animacion para la imagen
+.flex-image:hover{
+    opacity: 60%;
+}
+
+//
+
+.text{
+    color: $primaryColor;
+    font-family: $font;
+    margin: 25px 40px 25px 25px;
+}
+
+.title-card{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.textCard{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.groupValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .textValor{
+        font-family: $font;
+        font-size: 20px;
+        font-weight: bold;
+        color: $valuecolor;
+        margin: 25px;
+    }
+    .textStatus{
+        font-size: 20px;
+        font-weight: lighter;
+    }    
+}
+
+.line{
+    background-color: $primaryColor;
+    width: 90%;
+    height: 1px;
+    margin-left: 5%;
+}
+
+.groupCreator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .profilePicture{
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-image: url(../images/image-avatar.png);
+        background-size: 35px 35px;
+        margin: 0px 0px 0px 25px;
+        border-radius: 100%;
+        border-color: $primaryColor;
+        border-style: solid;
+        border-width: 2px;
+        
+    }    
+    .creatorName{
+        color: $primaryColor;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: lighter; 
+        margin-left: 15px;   
+    }
+}
+
+span{
+    font-weight: bold;
+}
+
+
+//breakpoints
+@media (max-width: 466px){
+    .flex-container{
+        width: 90%;
+        height: auto;
+        .flex-image{
+            width: 85%;
+            height: 300px;
+            background-size: 100%;
+        }
+    }
+    .textCard{
+        margin: 10px 25px 0px 25px;
+        font-size: 18px;
+    }
+    .textValor{
+        font-size: 5px;
+        font-weight: bold;
+        color: $valuecolor;
+        margin: 10px;
+    }
+    .textStatus{
+        font-size: 5px;
+    } 
+    .creatorName{
+        font-size: 5px; 
+    }
+}

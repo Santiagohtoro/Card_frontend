@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;500&display=swap");
+body {
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container {
+  width: 400px;
+  height: 680px;
+  background-color: #14253d;
+  margin-top: 6%;
+  border-radius: 15px;
+  -webkit-box-shadow: 15px 20px 20px 20px #000000;
+          box-shadow: 15px 20px 20px 20px #000000;
+}
+
+.flex-container .flex-image {
+  width: 350px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: 350px 350px;
+  margin: 25px 25px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visual {
+  z-index: -1;
+}
+
+.flex-image:hover {
+  opacity: 60%;
+}
+
+.text {
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  margin: 25px 40px 25px 25px;
+}
+
+.title-card {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.textCard {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.groupValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.groupValue .textValor {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: aqua;
+  margin: 25px;
+}
+
+.groupValue .textStatus {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.line {
+  background-color: #ffffff;
+  width: 90%;
+  height: 1px;
+  margin-left: 5%;
+}
+
+.groupCreator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.groupCreator .profilePicture {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-image: url(../images/image-avatar.png);
+  background-size: 35px 35px;
+  margin: 0px 0px 0px 25px;
+  border-radius: 100%;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.groupCreator .creatorName {
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 15px;
+}
+
+span {
+  font-weight: bold;
+}
+
+@media (max-width: 466px) {
+  .flex-container {
+    width: 90%;
+    height: auto;
+  }
+  .flex-container .flex-image {
+    width: 85%;
+    height: 300px;
+    background-size: 100%;
+  }
+  .textCard {
+    margin: 10px 25px 0px 25px;
+    font-size: 18px;
+  }
+  .textValor {
+    font-size: 5px;
+    font-weight: bold;
+    color: aqua;
+    margin: 10px;
+  }
+  .textStatus {
+    font-size: 5px;
+  }
+  .creatorName {
+    font-size: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
